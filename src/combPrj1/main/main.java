@@ -5,6 +5,7 @@ import java.util.Scanner;
 import combPrj1.method.AlphabetPermutation;
 import combPrj1.method.DecrePermutation;
 import combPrj1.method.IncrePermutation;
+import combPrj1.method.NeighborSwitchPermutation;
 
 public class main {
 
@@ -35,6 +36,15 @@ public class main {
 		scale = scan.nextInt();
 		start = System.currentTimeMillis();
 		dp.permutationAlgorathim(dp.creatPermutation(scale));
+		end = System.currentTimeMillis();
+		System.out.println("run time: " + (double)Math.round(end-start)/1000+" second");
+	
+		NeighborSwitchPermutation nsp = new NeighborSwitchPermutation();
+		scan = new Scanner(System.in);
+		System.out.println("Please input scale of permutation: ");
+		scale = scan.nextInt();
+		start = System.currentTimeMillis();
+		nsp.permutationAlgorathim(nsp.creatPermutation(scale));
 		end = System.currentTimeMillis();
 		System.out.println("run time: " + (double)Math.round(end-start)/1000+" second");
 	}

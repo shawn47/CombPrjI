@@ -139,13 +139,13 @@ public class NeighborSwitchPermutation {
 	public void permutationAlgorathim(NeighborDigitInfo[] permutation){
 			for(int i = 0 ; i < factorial(permutation.length);++i) {
 				int[] original = getInterNumber(permutation);
-				for(int j = 0 ; j < permutation.length ; ++ j){
-					System.out.print(permutation[j].value);
-				}
-				System.out.print("\t");
-				for(int k = 0 ; k < original.length ; ++ k)
-					System.out.print(original[k]);
-				System.out.println();
+				//for(int j = 0 ; j < permutation.length ; ++ j){
+				//	System.out.print(permutation[j].value);
+				//}
+				//System.out.print("\t");
+				//for(int k = 0 ; k < original.length ; ++ k)
+				//	System.out.print(original[k]);
+				//System.out.println();
 				original = nextInterNumber(original);
 				permutation = getPermutation(original);
 			}

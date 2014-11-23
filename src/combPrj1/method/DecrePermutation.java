@@ -83,10 +83,10 @@ public class DecrePermutation extends BaseFunction {
 		int time = 0;
 		// control loop stop
 		while ((++time) <= factorial(permutation.length())) {
-			char[] ch = permutation.toCharArray();
-			for(int i= 0 ; i< permutation.length() ; ++i){
-				System.out.print(ch[i] + " ");
-			}
+			//char[] ch = permutation.toCharArray();
+			//for(int i= 0 ; i< permutation.length() ; ++i){
+			//	System.out.print(ch[i] + " ");
+			//}
 			/** find next permutation */ 
 			//original interNumber
 			String original = getMediaNumber(permutation);
@@ -94,7 +94,7 @@ public class DecrePermutation extends BaseFunction {
 			String nextInterNumber = nextMediaNumber(original);
 			//update permutation with next permutation
 			permutation = getPermutation(nextInterNumber);
-			System.out.println("\t" + original);
+			//System.out.println("\t" + original);
 		}
 	}
 

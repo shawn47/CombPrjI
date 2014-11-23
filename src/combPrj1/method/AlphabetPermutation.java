@@ -33,18 +33,18 @@ public class AlphabetPermutation extends BaseFunction {
 	public void permutationAlgorathim(String permutation) {
 		// TODO Auto-generated method stub
 		char[] ch = permutation.toCharArray();
-		for(int i = 0 ; i < permutation.length() ; ++i ){
-			System.out.print(ch[i]+" ");
-		}
+		//for(int i = 0 ; i < permutation.length() ; ++i ){
+		//	System.out.print(ch[i]+" ");
+		//}
 		System.out.println();
 		int times = 1;
 		while (hasNextPermutation(getPosition(permutation))) {
 			permutation = nextPermutation(permutation);
-			ch = permutation.toCharArray();
-			for(int i = 0 ; i < permutation.length() ; ++i ){
-				System.out.print(ch[i]-48+" ");
-			}
-			System.out.println();
+			//ch = permutation.toCharArray();
+			//for(int i = 0 ; i < permutation.length() ; ++i ){
+			//	System.out.print(ch[i]-48+" ");
+			//}
+			//System.out.println();
 			++times;
 		}
 		System.out.println("times = " + times);

@@ -101,12 +101,12 @@ public class IncrePermutation extends BaseFunction {
 		int time = 0;
 		// control loop stop
 		while ((++time) <= factorial(permutation.length())) {
-			char[] ch = permutation.toCharArray();
+			//char[] ch = permutation.toCharArray();
 			//print as Media Number sequence of ascend permutation 
-			for (int i = 0; i < permutation.length(); ++i) {
-				System.out.print(ch[i] - 48+ " ");
-			}
-			System.out.println("\t" + getMediaNumber(permutation));
+			//for (int i = 0; i < permutation.length(); ++i) {
+			//	System.out.print(ch[i] - 48+ " ");
+			//}
+			//System.out.println("\t" + getMediaNumber(permutation));
 			permutation = getPermutation(nextMediaNumber(getMediaNumber(permutation)));
 		}
 	}
